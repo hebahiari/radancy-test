@@ -156,9 +156,6 @@
 }
 /*tablet styles*/
 @media only screen and (min-width: 550px) {
-  body {
-    background-color: rgb(217, 223, 171);
-  }
   body header .hero img {
     object-position: top left;
   }
@@ -179,9 +176,6 @@
 }
 /*desktop styles*/
 @media only screen and (min-width: 800px) {
-  body {
-    background-color: rgb(231, 217, 231);
-  }
   body header .container {
     display: block;
     max-width: 1200px;

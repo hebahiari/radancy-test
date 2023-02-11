@@ -1,0 +1,240 @@
+/* mobile styles*/
+@media only screen and (min-width: 100px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body p {
+    color: #888888;
+  }
+  body h2 {
+    text-align: center;
+  }
+  body h3,
+  body h2 {
+    color: #00945f;
+    font-weight: 500;
+  }
+  body header .container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .hero {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  body header .hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
+  }
+  body header .hero .block {
+    display: none;
+  }
+  body main p {
+    line-height: 30px;
+  }
+  body main hr {
+    width: 80px;
+    border: 1px solid #00945f;
+  }
+  body main .introduction {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .introduction button {
+    background-color: #e97300;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 165px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  body main .advantages {
+    margin: 60px 30px;
+  }
+  body main .advantages .articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body main .advantages .articles .top,
+  body main .advantages .articles .bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body main .advantages .articles .top .horizontal,
+  body main .advantages .articles .bottom .horizontal {
+    width: 90%;
+    background-color: #c5c5c5;
+    height: 1px;
+    margin-bottom: 20px;
+  }
+  body main .advantages .articles .top .vertical,
+  body main .advantages .articles .bottom .vertical {
+    display: none;
+  }
+  body main .advantages .articles .top article,
+  body main .advantages .articles .bottom article {
+    flex: 6;
+    margin-bottom: 30px;
+    min-width: 250px;
+  }
+  body main .advantages .articles .top article .link,
+  body main .advantages .articles .bottom article .link {
+    color: #759b24;
+    cursor: pointer;
+  }
+  body main .information {
+    margin: -30px 30px;
+  }
+  body main .information h2 {
+    background-color: #00945f;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  body main .information p {
+    background-color: #ebf7f5;
+    padding: 25px 25px;
+    margin-top: 0;
+  }
+  body main .quotes {
+    margin: 60px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .quotes .quote {
+    position: relative;
+    margin: 20px 20px;
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+  }
+  body main .quotes .quote .quotationmark {
+    font-size: 200px;
+    position: absolute;
+    top: 60px;
+    color: rgba(0, 0, 0, 0.075);
+  }
+  body main .quotes .quote img {
+    margin: auto;
+    width: 180px;
+  }
+  body main .quotes .quote .signature {
+    color: #29ae8d;
+    font-weight: 600;
+  }
+  body hr {
+    width: 100%;
+    border: 1px solid #00945f;
+  }
+  body footer {
+    margin: 30px 25px;
+  }
+  body footer p {
+    font-size: 11px;
+  }
+  body footer .icons {
+    cursor: pointer;
+  }
+  body footer .links {
+    color: black;
+    cursor: pointer;
+  }
+}
+/*tablet styles*/
+@media only screen and (min-width: 550px) {
+  body {
+    background-color: rgb(217, 223, 171);
+  }
+  body header .hero img {
+    object-position: top left;
+  }
+  body main .quotes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  body main .quotes .quote {
+    max-width: 200px;
+  }
+  body main .quotes .larger {
+    flex: 2;
+    max-width: 400px;
+    min-width: 300px;
+  }
+}
+/*desktop styles*/
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: rgb(231, 217, 231);
+  }
+  body header .container {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+  }
+  body header .hero {
+    height: 450px;
+    margin-bottom: 40px;
+  }
+  body header .hero .block {
+    display: block;
+    height: 450px;
+    width: 50%;
+    position: absolute;
+    background-color: rgba(13, 99, 76, 0.8352941176);
+    top: 0;
+    right: 0;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 20% 0%);
+  }
+  body main .introduction,
+  body main .advantages,
+  body main .information,
+  body main .quotes {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 0 30px;
+  }
+  body main .information p {
+    padding: 25px 65px;
+  }
+  body main .advantages .articles .top .horizontal,
+  body main .advantages .articles .bottom .horizontal {
+    display: none;
+  }
+  body main .advantages .articles .top .vertical,
+  body main .advantages .articles .bottom .vertical {
+    display: block;
+    margin: 50px 40px;
+    flex: 1;
+  }
+  body main .advantages .articles .top .vertical .line,
+  body main .advantages .articles .bottom .vertical .line {
+    width: 1px;
+    background-color: #c5c5c5;
+    height: 100%;
+    margin: auto;
+  }
+  body footer {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

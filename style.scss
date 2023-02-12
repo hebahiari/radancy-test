@@ -24,6 +24,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .logo {
+          height: 20px;
+        }
       }
 
       .hero {
@@ -36,9 +40,10 @@
           width: 100%;
           object-fit: cover;
           object-position: top left;
+          transform: scale(1.1);
         }
 
-        .block {
+        .polygon {
           display: none;
         }
       }
@@ -81,8 +86,7 @@
           justify-content: space-between;
           flex-wrap: wrap;
 
-          .top,
-          .bottom {
+          .row{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -194,12 +198,13 @@
     // background-color: rgb(217, 223, 171);
 
     header {
-        .hero {
-          img {
-            object-position: top left;
-          }
+      .hero {
+        img {
+          object-position: top left;
+          transform: scale(1);
         }
       }
+    }
 
     main {
       .quotes {
@@ -231,14 +236,17 @@
       .container {
         display: block;
         max-width: 1200px;
-        margin: auto;
+        margin: 30px auto 0 auto;
+        .logo {
+          height: 35px;
+        }
       }
 
       .hero {
         height: 450px;
-        margin-bottom: 40px;
+        margin-bottom: 45px;
 
-        .block {
+        .polygon {
           display: block;
           height: 450px;
           width: 50%;
@@ -263,15 +271,14 @@
       }
 
       .information {
-        p{
-            padding: 25px 65px;
+        p {
+          padding: 25px 65px;
         }
       }
 
       .advantages {
         .articles {
-          .top,
-          .bottom {
+          .row {
             .horizontal {
               display: none;
             }

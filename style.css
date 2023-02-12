@@ -20,6 +20,9 @@
     justify-content: center;
     align-items: center;
   }
+  body header .container .logo {
+    height: 20px;
+  }
   body header .hero {
     height: 300px;
     position: relative;
@@ -30,8 +33,9 @@
     width: 100%;
     object-fit: cover;
     object-position: top left;
+    transform: scale(1.1);
   }
-  body header .hero .block {
+  body header .hero .polygon {
     display: none;
   }
   body main p {
@@ -66,31 +70,26 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  body main .advantages .articles .top,
-  body main .advantages .articles .bottom {
+  body main .advantages .articles .row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  body main .advantages .articles .top .horizontal,
-  body main .advantages .articles .bottom .horizontal {
+  body main .advantages .articles .row .horizontal {
     width: 90%;
     background-color: #c5c5c5;
     height: 1px;
     margin-bottom: 20px;
   }
-  body main .advantages .articles .top .vertical,
-  body main .advantages .articles .bottom .vertical {
+  body main .advantages .articles .row .vertical {
     display: none;
   }
-  body main .advantages .articles .top article,
-  body main .advantages .articles .bottom article {
+  body main .advantages .articles .row article {
     flex: 6;
     margin-bottom: 30px;
     min-width: 250px;
   }
-  body main .advantages .articles .top article .link,
-  body main .advantages .articles .bottom article .link {
+  body main .advantages .articles .row article .link {
     color: #759b24;
     cursor: pointer;
   }
@@ -158,6 +157,7 @@
 @media only screen and (min-width: 550px) {
   body header .hero img {
     object-position: top left;
+    transform: scale(1);
   }
   body main .quotes {
     flex-direction: row;
@@ -179,13 +179,16 @@
   body header .container {
     display: block;
     max-width: 1200px;
-    margin: auto;
+    margin: 30px auto 0 auto;
+  }
+  body header .container .logo {
+    height: 35px;
   }
   body header .hero {
     height: 450px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
-  body header .hero .block {
+  body header .hero .polygon {
     display: block;
     height: 450px;
     width: 50%;
@@ -207,18 +210,15 @@
   body main .information p {
     padding: 25px 65px;
   }
-  body main .advantages .articles .top .horizontal,
-  body main .advantages .articles .bottom .horizontal {
+  body main .advantages .articles .row .horizontal {
     display: none;
   }
-  body main .advantages .articles .top .vertical,
-  body main .advantages .articles .bottom .vertical {
+  body main .advantages .articles .row .vertical {
     display: block;
     margin: 50px 40px;
     flex: 1;
   }
-  body main .advantages .articles .top .vertical .line,
-  body main .advantages .articles .bottom .vertical .line {
+  body main .advantages .articles .row .vertical .line {
     width: 1px;
     background-color: #c5c5c5;
     height: 100%;
